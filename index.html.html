@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Aluno - SGE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background-color: #164e63;
+            color: white;
+            padding: 25px 8%;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        nav {
+            margin-top: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .boas-vindas {
+            margin-bottom: 25px;
+        }
+
+        .boas-vindas p {
+            margin-top: 8px;
+            color: #475569;
+        }
+
+        #eventos h2 {
+            margin-bottom: 20px;
+        }
+
+        .eventos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .evento {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #00000012;
+        }
+
+        .evento h3 {
+            color: #164e63;
+            margin-bottom: 15px;
+        }
+
+        .evento p {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .categoria {
+            display: inline-block;
+            background-color: #cffafe;
+            color: #155e75;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #0e7490;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 8px;
+        }
+
+        footer {
+            background-color: #164e63;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 22px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px 12px 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SGE - Gestão de Eventos</h1>
+        <p>Sistema de Gestão de Eventos da Escola Técnica</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#eventos">Próximos Eventos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="boas-vindas" id="inicio">
+            <h2>Painel do Aluno</h2>
+            <p>Bem-vindo! Confira os eventos disponíveis e participe.</p>
+        </section>
+
+        <section id="eventos">
+            <h2>Próximos Eventos</h2>
+
+            <div class="eventos">
+
+                <article class="evento">
+                    <span class="categoria">Palestra</span>
+                    <h3>Tecnologia e Inovação</h3>
+                    <p><strong>Data:</strong> 20/11/2026</p>
+                    <p><strong>Horário:</strong> 19h</p>
+                    <p><strong>Local:</strong> Auditório da escola</p>
+                    <p><strong>Vagas:</strong> 40 disponíveis</p>
+                    <p>Conheça novas tecnologias e tendências do mercado.</p>
+                    <button type="button">Inscrever-se</button>
+                </article>
+
+                <article class="evento">
+                    <span class="categoria">Oficina</span>
+                    <h3>Introdução à Programação</h3>
+                    <p><strong>Data:</strong> 25/11/2026</p>
+                    <p><strong>Horário:</strong> 14h</p>
+                    <p><strong>Local:</strong> Laboratório de informática</p>
+                    <p><strong>Vagas:</strong> 25 disponíveis</p>
+                    <p>Aprenda conceitos básicos de programação.</p>
+                    <button type="button">Inscrever-se</button>
+                </article>
+
+                <article class="evento">
+                    <span class="categoria">Workshop</span>
+                    <h3>Desenvolvimento Web</h3>
+                    <p><strong>Data:</strong> 02/12/2026</p>
+                    <p><strong>Horário:</strong> 15h</p>
+                    <p><strong>Local:</strong> Sala de tecnologia</p>
+                    <p><strong>Vagas:</strong> 30 disponíveis</p>
+                    <p>Conheça os fundamentos de HTML e CSS.</p>
+                    <button type="button">Inscrever-se</button>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sistema de Gestão de Eventos - SGE</p>
+        <p>Escola Técnica | Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
